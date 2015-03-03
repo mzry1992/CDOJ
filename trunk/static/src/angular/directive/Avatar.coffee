@@ -21,7 +21,7 @@ cdoj
           $scope.size = $($element).width() if $scope.size == undefined
           $scope.image = "retro" if $scope.image == undefined
           $scope.rating = "pg" if $scope.rating == undefined
-          url = "http://www.gravatar.com/avatar/" +
+          url = "http://gravatar.duoshuo.com/avatar/" +
             CryptoJS.MD5($scope.email).toString() + ".jpg?" +
             (if $scope.size then "s=" + $scope.size + "&" else "") +
             (if $scope.rating then "r=" + $scope.rating + "&" else "") +
