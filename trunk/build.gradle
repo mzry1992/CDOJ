@@ -26,7 +26,6 @@ apply plugin: 'jettyEclipse'
 // Build cdoj subproject first
 jettyEclipseRun {
   doFirst {
-    tasks.getByPath(":static:build").execute()
   }
 }
 
